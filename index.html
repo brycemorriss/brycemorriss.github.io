@@ -17,8 +17,27 @@
           
     <body>  
 
+
         <div class="panel fullheight clearfix">
             <div class="content">
+            <section>
+                <p><button id="trigger-overlay" type="button">Open Overlay</button></p>
+            </section>
+
+        <!-- open/close -->
+        <div class="overlay overlay-hugeinc">
+            <button type="button" class="overlay-close">Close</button>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Clients</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
             <img src="images/aco_logo.png" alt="archie & co">
             </div>
 
@@ -26,6 +45,7 @@
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/classie.js"></script>
         <script src="js/scripts.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
