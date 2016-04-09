@@ -94,6 +94,27 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+
+.palm {
+  width: 400px;
+  height: 200px;
+  background: url('../images/palm_sprite.png') left center;
+  animation: play 1s steps(13) infinite;
+  position: absolute;
+
+right: 0px;
+bottom: 0px;
+}
+
+@keyframes play {
+    100% { background-position: -5200px; }
+}
+.overlay nav {
+
+    z-index: 200;
+}
+
 .menu_logo {
     width: 60px;
     height: 81px;
