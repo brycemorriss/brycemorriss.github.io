@@ -129,6 +129,145 @@ textarea {
     height:auto;
 
 }
+
+/* ==========================================================================
+  Nav Stuff
+   ========================================================================== */
+
+ 
+@media (min-width:768px) {
+    .navbar-primary.banner {
+        background: transparent;
+        margin-bottom: 0
+    }
+    .navbar-primary.banner .navbar-collapse.width {
+        overflow: hidden !important;
+        width: auto !important;
+        height: auto !important;
+        display: block !important;
+        visibility: visible !important
+    }
+    .navbar-primary.banner .navbar-collapse.width .nav {
+        overflow: hidden !important;
+        -webkit-transform: translateX(110%);
+        -ms-transform: translateX(110%);
+        -o-transform: translateX(110%);
+        transform: translateX(110%);
+        -webkit-transition: -webkit-transform .3s;
+        -o-transition: -o-transform .3s;
+        transition: transform .3s;
+        -webkit-transition-timing-function: ease;
+        -o-transition-timing-function: ease;
+        transition-timing-function: ease
+    }
+    .navbar-primary.banner .navbar-collapse.width.collapsing .nav,
+    .navbar-primary.banner .navbar-collapse.width.in .nav {
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0)
+    }
+    .navbar-primary.banner .navbar-collapse.width.in {
+        overflow: visible !important
+    }
+    .navbar-primary.banner .navbar-collapse.width.in .nav {
+        overflow: visible !important;
+        margin-right: 7px
+    }
+    .navbar-primary.banner .navbar-toggle {
+        display: block
+    }
+}
+
+.navbar-toggle {
+    float: none;
+    position: absolute;
+    margin: 0;
+    right: 30px;
+    top: 30px;
+    width: 55px;
+    height: 55px
+}
+
+.navbar-toggle .icon-bar {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    left: 12px;
+    border-top: 3px solid #151515;
+    width: 28px;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    margin-top: 4px
+}
+
+.navbar-toggle .icon-bar.icon-bar-top,
+.navbar-toggle .icon-bar:nth-child(2) {
+    top: 14px
+}
+
+.navbar-toggle .icon-bar.icon-bar-middle,
+.navbar-toggle .icon-bar:nth-child(3) {
+    top: 22px
+}
+
+.navbar-toggle .icon-bar.icon-bar-bottom,
+.navbar-toggle .icon-bar:nth-child(4) {
+    top: 30px
+}
+
+.nav-opening .navbar-toggle .icon-bar.icon-bar-top,
+.nav-open .navbar-toggle .icon-bar.icon-bar-top,
+.nav-opening .navbar-toggle .icon-bar:nth-child(2),
+.nav-open .navbar-toggle .icon-bar:nth-child(2),
+.nav-opening .navbar-toggle .icon-bar.icon-bar-bottom,
+.nav-open .navbar-toggle .icon-bar.icon-bar-bottom,
+.nav-opening .navbar-toggle .icon-bar:nth-child(4),
+.nav-open .navbar-toggle .icon-bar:nth-child(4) {
+    top: 20px
+}
+
+.nav-opening .navbar-toggle .icon-bar.icon-bar-middle,
+.nav-open .navbar-toggle .icon-bar.icon-bar-middle,
+.nav-opening .navbar-toggle .icon-bar:nth-child(3),
+.nav-open .navbar-toggle .icon-bar:nth-child(3) {
+    opacity: 0
+}
+
+.nav-opening.banner .navbar-brand,
+.nav-open.banner .navbar-brand {
+    background-position: center bottom
+}
+
+.nav-open .navbar-toggle .icon-bar {
+    -webkit-transition: all .55s linear;
+    -o-transition: all .55s linear;
+    transition: all .55s linear
+}
+
+.nav-open .navbar-toggle .icon-bar.icon-bar-top,
+.nav-open .navbar-toggle .icon-bar:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: -webkit-transform .3s .03s;
+    -o-transition: -o-transform .3s .03s;
+    transition: transform .3s .03s
+}
+
+.nav-open .navbar-toggle .icon-bar.icon-bar-bottom,
+.nav-open .navbar-toggle .icon-bar:nth-child(4) {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transition: -webkit-transform .3s .03s;
+    -o-transition: -o-transform .3s .03s;
+    transition: transform .3s .03s
+}
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
