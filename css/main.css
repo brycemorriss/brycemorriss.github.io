@@ -94,14 +94,37 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+margin: 0;
+}
 
+#archie-scroll {
+width: 100%;
+height: auto;
+background: url(../images/test.jpg) repeat;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+background-size: cover;
+-webkit-animation: backgroundScroll 3000s linear infinite;
+animation: backgroundScroll 8000s linear infinite;
+}
+ 
+@-webkit-keyframes backgroundScroll {
+from {background-position: 0px 0;}
+to {background-position: -80000vw 0;}
+}
+ 
+@keyframes backgroundScroll {
+from {background-position: 0px 0;}
+to {background-position: -80000vw 0;}
+}
 
 .palm {
   width: 400px;
   height: 200px;
   background: url('../images/palm_sprite.png') left center;
   animation: play 1s steps(13) infinite;
-  position: absolute;
+  position: absolute; 
 
 right: 0px;
 bottom: 0px;
