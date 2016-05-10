@@ -98,10 +98,117 @@ body {
 margin: 0;
 }
 
-#archie-scroll {
+.navigation_test {
+    height:100vh;
+}
+
+.feature_slider {
+        position:relative;
+        height:500px
+    } 
+    .feature_slider .dots {
+        display:block;
+        position:absolute;
+        z-index:300;
+        bottom:32px;
+        right:32px;
+        height:48px;
+        line-height:48px
+    }
+    .feature_slider .dots .dot {
+        display:inline-block;
+        width:12px;
+        height:12px;
+        background-color:#fff;
+        border-radius:50%;
+        margin-left:8px;
+        opacity:0.5;
+        transition:opacity 0.2s
+    }
+     .feature_slider .dots .dot.active {
+        opacity:1
+    }
+    .feature_slider .slide {
+        position:absolute;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        min-height:300px;
+        height:100%;
+        background-size:cover;
+        background-position:center center;
+        visibility:hidden;
+        opacity:0;
+        transition:opacity 0s 0.5s,visibility 0s 0.5s;
+       
+    }
+ .feature_slider .slide.show {
+        visibility:visible;
+        opacity:1;
+        transition:opacity 0.5s,visibility 0s;
+       
+    }
+    .feature_slider .slide .overlay {
+        position:absolute;
+        top:40%;
+        right:0;
+        bottom:0;
+        left:0;
+        background-image:url("gradient.png");
+        background-size:2px 100%;
+        background-repeat:repeat-x;
+        opacity:0.3;
+     
+    }
+    .feature_slider .slide .text {
+        position: absolute;
+        bottom: 32px;
+        max-width: 450px;
+        height: auto;
+        z-index: 500;
+        top: 0;
+        right: 0;
+        padding-right: 32px;
+        padding-top: 15px;
+    }
+    .feature_slider .slide .text h2 {
+        color:#fff;
+        font-family:georgia,serif;
+        font-size:24px;
+        font-weight:700;
+        font-style:italic;
+        text-transform:none;
+        margin:0
+    }
+.feature_slider .slide .text .slide_button {
+        margin-top:16px
+    }
+     .feature_slider .slide .text .slide_button a {
+        display:inline-block;
+        background-color: rgb(10, 83, 119);
+        color:#fff;
+        line-height:100%;
+        padding:16px;
+        font-family:"proxima-nova",sans-serif;
+        text-transform:uppercase;
+        text-decoration:none;
+        transition:background-color 0.1s
+    }
+    .feature_slider .slide .text .slide_button a:hover {
+        background-color: rgb(9, 67, 96);
+    }
+    .slider_container {
+        margin:0 auto;
+        padding:20px 0px 80px 0px;
+        max-width:1024px;
+    }
+
+
+#archie-scroll, .slide {
 width: 100%;
 height: auto;
-background: url(../images/test.jpg) repeat;
+background: url(../images/Olivia_background.jpg) repeat;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 background-size: cover;
@@ -278,6 +385,7 @@ background-position: center center;
     visibility: visible;
     -webkit-transition: opacity 0.5s;
     transition: opacity 0.5s;
+    z-index: 10;
 }
 
 .overlay-hugeinc nav {
@@ -365,6 +473,7 @@ background-position: center center;
     border: none;
     margin: 0;
     padding: 0;
+    z-index: 20;
 }
 
 .menu-icon-wrapper .menu-icon-trigger:hover,
