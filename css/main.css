@@ -94,6 +94,31 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+ #preload {
+    display:block;
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-color: #fc3400;
+    z-index:8000;
+
+} 
+
+#preload .icon {
+    display:block;
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-repeat:no-repeat;
+    background-size:300px 44px;
+    background-position:center center;
+}
+
    .mobile_header img{
     width:100%;
     height:auto;
