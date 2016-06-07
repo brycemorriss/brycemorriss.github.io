@@ -228,8 +228,28 @@ transition: all 0.5s;
         background-image:url('../img/p_co_4_02.jpg');
         transition: all 0.5s;
     }
+    #popup {
+        display:none;
+    }
 
 @media only screen and (min-width: 768px) {
+    #popup img{
+        max-width :600px;
+
+    }
+
+    #popup {
+        position:absolute;
+        width:600px;
+        top:50%;
+        left:48%;
+        margin-top:-50px;
+        margin-left:-260px;
+        display:block;
+        z-index: 100;
+    }
+
+
     .content img {
         width:100%;
         height:auto;
