@@ -158,7 +158,7 @@ textarea {
         color:#4dc9f3;
         text-decoration:underline;
     }
-    #home_priorities {
+    2#home_priorities {
         text-align:center;
     }
     #home_priorities:before,#home_priorities:after {
@@ -223,20 +223,20 @@ textarea {
     }
    .image_1 {
         background-image:url('../img/p_co_1_02.jpg');
-transition: all 0.5s;
+transition: all 0.1s;
     }
 .image_2 {
         background-image:url('../img/p_co_2_02.jpg');
-        transition: all 0.5s;
+        transition: all 0.1s;
     }
     
 .image_3 {
         background-image:url('../img/p_co_3_02.jpg');
-        transition: all 0.5s;
+        transition: all 0.1s;
     }
     .image_4 {
         background-image:url('../img/p_co_4_02.jpg');
-        transition: all 0.5s;
+        transition: all 0.1s;
     }
     #popup {
         display:none;
@@ -250,8 +250,13 @@ transition: all 0.5s;
     vertical-align: middle;
     line-height: 120%;
     }
-
+#home_priorities {
+    text-align: center;
+}
 @media only screen and (min-width: 768px) {
+    #home_priorities .priority .inner {
+    vertical-align: top;
+}
     .mobile_header {
         display:none;  
     }
@@ -299,7 +304,7 @@ transition: all 0.5s;
     background-size: cover;
     background-position: center center;
     opacity: 1;
-    transition: all 0.5s;
+    transition: all 0.1s;
     height:100vh;
 }
 .image_1_1 {
@@ -347,7 +352,7 @@ transition: all 0.5s;
         line-height:600px;
         width:25%;
         -webkit-transition: width 2s;
-        transition: width 0.5s;
+        transition: width 0.1s;
     }
     #home_priorities .priority .icon {
         width:80px;
@@ -363,7 +368,7 @@ transition: all 0.5s;
         padding:12px;
         opacity:0;
         transform:translateY(32px);
-        transition:opacity 0.5s,transform 0.5s;
+        transition:opacity 0.1s,transform 0.1s;
         font-family:museo-slab;
         font-weight:700;
         font-size:14px;
