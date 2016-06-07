@@ -223,20 +223,20 @@ textarea {
     }
    .image_1 {
         background-image:url('../img/p_co_1_02.jpg');
-transition: all 0.1s;
+transition: all 0.5s;
     }
 .image_2 {
         background-image:url('../img/p_co_2_02.jpg');
-        transition: all 0.1s;
+        transition: all 0.5s;
     }
     
 .image_3 {
         background-image:url('../img/p_co_3_02.jpg');
-        transition: all 0.1s;
+        transition: all 0.5s;
     }
     .image_4 {
         background-image:url('../img/p_co_4_02.jpg');
-        transition: all 0.1s;
+        transition: all 0.5s;
     }
     #popup {
         display:none;
@@ -304,7 +304,7 @@ transition: all 0.1s;
     background-size: cover;
     background-position: center center;
     opacity: 1;
-    transition: all 0.1s;
+    transition: all 0.5s;
     height:100vh;
 }
 .image_1_1 {
@@ -352,7 +352,7 @@ transition: all 0.1s;
         line-height:600px;
         width:25%;
         -webkit-transition: width 2s;
-        transition: width 0.1s;
+        transition: width 0.5s;
     }
     #home_priorities .priority .icon {
         width:80px;
@@ -368,7 +368,7 @@ transition: all 0.1s;
         padding:12px;
         opacity:0;
         transform:translateY(32px);
-        transition:opacity 0.1s,transform 0.1s;
+        transition:opacity 0.5s,transform 0.5s;
         font-family:museo-slab;
         font-weight:700;
         font-size:14px;
