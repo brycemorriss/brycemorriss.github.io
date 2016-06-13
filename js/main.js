@@ -9,6 +9,7 @@ $(window).load(function(){
 	hidePreloader();
 });
 
+<<<<<<< HEAD
 
 
 
@@ -2918,3 +2919,6 @@ $(window).load(function(){
     };
 
 });
+=======
+	
+>>>>>>> origin/master
