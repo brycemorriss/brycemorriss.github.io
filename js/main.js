@@ -2880,7 +2880,7 @@ $(window).load(function(){
                 scrollable.data('iscrollInstance', 'undefined');
             }
             element.find(SCROLLABLE_SEL).children().first().children().first().unwrap().unwrap();
-        },
+        },  
 
         /**
          * Called when overflow scrolling has already been setup but the
