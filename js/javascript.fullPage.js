@@ -22,7 +22,7 @@
 }(this, window, document, function(window, document, undefined){
     'use strict';
 
-    var fullpage;
+    var fullpage; 
 
     //CONSTANTS
 

@@ -10,6 +10,18 @@ $(window).load(function(){
 });
 
 
+	var menuOpen = false;
+	
+	$("#menu_button").click(function(){
+		console.log(menuOpen);
+		if(!menuOpen){
+			$("nav").slideDown(300);
+			menuOpen = true;
+		}else{
+			$("nav").slideUp(300);
+			menuOpen = false;
+		};
+	});
 
 /*!
  * fullPage 2.8.1
